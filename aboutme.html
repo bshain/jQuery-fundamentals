@@ -1,0 +1,62 @@
+
+<!-- ================================
+ EXERCISE: About Me
+================================ -->
+
+
+ <!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="utf-8"/>
+   <title>About Me</title>
+ </head>
+ <body>
+   <h1>About Me</h1>
+
+   <ul>
+     <li>Nickname: <span id="nickname"></span>
+     <li>Favorites:  <span id="favorites"></span>
+     <li>Hometown: <span id="hometown"></span>
+    </ul>
+
+<script type="text/javascript">
+	var changeFont = document.getElementsByTagName('body')[0]
+	changeFont.style.fontFamily = "Helvetica, sans-serif"
+
+	var nickname = document.getElementById('nickname');
+	nickname.innerHTML = "Barns";
+
+	var favorites = document.getElementById('favorites');
+	favorites.innerHTML = "Nanaimo Bars";
+
+	var hometown = document.getElementById('hometown');
+	hometown.innerHTML = "Vancouver";
+
+	var listItems = document.getElementsByTagName('li')
+
+	for (var i = 0; i < listItems.length; i++){
+		listItems[i].className = "listitem";
+		listItems[i].style.color = "red";
+		}
+
+		// var makeRed = document.getElementsByClassName('listitem').style.color = "red";
+	
+	var myPhoto = document.createElement('img');
+	myPhoto.src = 'http://payload207.cargocollective.com/1/10/351378/6449370/Shain--Barbara.jpg';
+	var wholePage = document.getElementsByTagName('body')[0]
+	wholePage.appendChild(myPhoto)
+
+</script>
+
+  </body>
+ </html>
+
+<!--  Cuz every webpage needs an "About" section.
+
+ Start with this HTML and save it as "aboutme.html":
+
+ Add a script tag to the bottom.
+ Change the body style so it has a font-family of "Arial, sans-serif".
+ Replace each of the spans (nickname, favorites, hometown) with your own information.
+ Iterate through each li and change the class to "listitem". Add a style tag that sets a rule for "listitem" to make the color red.
+ Create a new img element and set its src attribute to a picture of you. Append that element to the page. -->
